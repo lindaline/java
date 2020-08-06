@@ -1,4 +1,4 @@
-package linda;
+package linda.mean;
 
 import java.lang.reflect.Array;
 import java.util.*;
