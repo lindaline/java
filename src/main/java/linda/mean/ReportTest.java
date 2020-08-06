@@ -1,4 +1,4 @@
-package linda;
+package linda.mean;
 
 import java.util.ArrayList;
 import java.util.List;

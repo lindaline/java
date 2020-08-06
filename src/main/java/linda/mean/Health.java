@@ -1,4 +1,6 @@
-package linda;
+package linda.mean;
+
+import linda.mean.Report;
 
 public class Health implements Report {
     @Override

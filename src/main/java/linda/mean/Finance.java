@@ -1,6 +1,4 @@
-package linda;
-
-import linda.Report;
+package linda.mean;
 
 public class Finance implements Report {
     @Override

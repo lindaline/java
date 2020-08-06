@@ -1,4 +1,4 @@
-package linda;
+package linda.mean;
 
 import java.io.*;
 
@@ -7,7 +7,7 @@ public class Inputstream {
 //        Inputstream();
 //        Filereader();
         try {
-            BufferedReader br=new BufferedReader(new FileReader("date.txt"));
+            BufferedReader br=new BufferedReader(new FileReader("date"));
             String line=br.readLine();
             while (line != null){
                 System.out.println(line);
@@ -22,7 +22,7 @@ public class Inputstream {
 
     private static void Filereader() {
         try {
-            FileReader fr=new FileReader("date.txt");
+            FileReader fr=new FileReader("date");
             int n=fr.read();
             while(n != -1){
                 System.out.print((char)n);
@@ -36,7 +36,7 @@ public class Inputstream {
     }
 
     private static void Inputstream() {
-        File file = new File("date.txt");
+        File file = new File("date");
         System.out.println(file.exists());
         System.out.println(file.getAbsolutePath());
         try {

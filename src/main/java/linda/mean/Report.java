@@ -1,4 +1,4 @@
-package linda;
+package linda.mean;
 
 public interface Report {
     public void load();
