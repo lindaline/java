@@ -10,18 +10,38 @@ public abstract class Thread {
             @Override
             public void run() {
                 for (int i = 0; i < 10; i++) {
-                    System.out.println("thread:" + i);
+                    System.out.println("Thread:" + i);
+                    try {
+                        java.lang.Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         };
         thread.start();
         MyThread myThread = new MyThread();
         myThread.run();
+        new java.lang.Thread(() -> {
+            for (int i = 0; i < 10; i++) {
+                System.out.println("Runnable lambda:" + i);
+                try {
+                    java.lang.Thread.sleep(50);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
                 for (int i = 0; i < 10; i++) {
                     System.out.println("Runnable:" + i);
+                    try {
+                        java.lang.Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         };
@@ -38,6 +58,11 @@ class MyThread extends Thread {
     public void run() {
         for (int i = 0; i < 10; i++) {
             System.out.println(getClass() + ":" + i);
+            try {
+                java.lang.Thread.sleep(50);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
