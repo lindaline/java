@@ -13,7 +13,7 @@ public class list_set_map {
 
     private static void map() {
         HashMap<String,String> stocks=new HashMap<>();
-        stocks.put("2330","台積電");
+//        stocks.put("2330","台積電");
         stocks.put("2313","鴻海");
         stocks.put("2330","TSMC");
         System.out.println(stocks.get("2330"));
