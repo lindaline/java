@@ -7,16 +7,16 @@ public class For {
     public static void main(String[] args) {
         int secret = new Random().nextInt(10) + 1;
         Scanner scanner = new Scanner(System.in);
-        for (int i = 1; i <= 4; i++) {
-            System.out.print("please enter a number(" + i + "4)");
+        for (int i = 1; i <= 20; i++) {
+            System.out.print("please enter a number(" + i + "/4):" + "\n");
             int number = scanner.nextInt();
-            System.out.println("第" + i + "次" + number);
+//            System.out.println("第" + i + "次" + number);
             if (number > secret) {
                 System.out.println("lower");
-            }else if(number<secret){
+            } else if (number < secret) {
                 System.out.println("higher");
-            }else{
-                System.out.println("Great,the number's" + number);
+            } else {
+                System.out.println("Great,the number's " + number);
                 break;
             }
         }
